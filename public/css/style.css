@@ -6,8 +6,7 @@ body {
 }
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
-	color: red;
+	color: #b11531;
 	font-size: 50px;
 	margin-top: 3px;
 	letter-spacing: 6px;
@@ -40,15 +39,45 @@ li {
 /*******************************************/
 .container {
 	min-height: 100vh;
+	min-width: 100vw;
+	justify-content: center;
+}
+.top-half {
 	display: flex;
-	align-items: center;
+	/* width: 100%; */
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	height: 50%;
+	align-content: stretch;
+	margin-top: 10%;
 }
 
-.main {
-	max-width: 100%;
-	display: block;
-	margin: 0px auto;
-	text-align: center;
+.owned-lists-container,
+.shared-lists-container {
+	width: 301px;
+}
+
+.bottom {
+	/* width: 100vw; */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 10%;
+}
+
+.shared-todos {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 10%;
 }
 
 .del,
@@ -62,7 +91,7 @@ li {
 }
 
 .button-container {
-	display: flex;
+	display: block;
 	gap: 30px;
 	justify-content: center;
 	margin-top: 46px;
@@ -97,10 +126,10 @@ input[type='submit']:hover {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.sharedYou {
+/* .sharedYou {
 	margin-top: 10em;
 	margin-bottom: 10em;
-}
+} */
 
 /******************************************
 /* Todo
